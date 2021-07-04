@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Online Voting system</title>
+    <link rel="icon" href="../img/onw.png" type="image/gif" sizes="16x16">
+    <style>
+        #address{
+            width: 30%;
+        }
+        #img-prt{
+            border:2px solid black;
+            border-radius: 5px;
+            padding:10px;
+            width: 30%;
+        }
+        #role{
+            border:2px solid black;
+            border-radius: 5px;
+            padding:10px;
+            width: 30%; 
+        }
+        #role select{
+            border-radius: 5px;
+            padding:10px;  
+        }
+        #reg-btn{
+            padding: 5px;
+    font-size: ;
+    border-radius:5px ;
+    background-color:red;
+    color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Online Voting System</h1> <hr>
+    <h3>Registration form</h3>
+    <form action="../api/register.php"method="Post">
+        <input type="text" name="name" placeholder="Enter your name">
+        <input type="number" name="Mobile" placeholder="Enter your no"><br><br>
+        <input type="password" name="password" placeholder="Enter your password">
+        <input type="password" name="password" placeholder="Confirm password"><br><br>
+        <input id="address" type="address" name="address" placeholder="Enter your address"><br><br>
+        <center>
+             <div id="img-prt">
+                <b>Upload image: </b><input type="file" name="photo">
+             </div><br><br>
+             <div id="role">
+                <b> Select your role:</b><select name="role">
+                     <option value="1">Voter</option>
+                     <option value="2">Party</option>
+                 </select><br><br>
+                 
+            </div>
+        </center><br>
+        
+        <button id="reg-btn">Register</button><br><br>
+        Already User?<a href="../index.html">Login here</a>
+        
+    </form>
+</body>
+</html>
